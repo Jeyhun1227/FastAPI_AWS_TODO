@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+zip = "chmod -x pkg_for_lambda.sh"
+
+[packages]
+uvicorn = {extras = ["standard"], version = "*"}
+fastapi = "*"
+mangum = "*"
+boto3 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
